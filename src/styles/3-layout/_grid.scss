@@ -1,0 +1,23 @@
+.l-grid {
+    display: grid;
+    gap: $gutter;
+    margin-bottom: rem(32);
+
+    grid-template-columns: 1fr; 
+
+    @include respond-to('sm') {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &--3-cols {
+        @include respond-to('md') {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+    
+    &--4-cols {
+        @include respond-to('md') {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}

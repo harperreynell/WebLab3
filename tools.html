@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Tools Showcase - Tools</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/src/styles/main.scss">
+</head>
+<body>
+
+    <header class="l-header">
+        <div class="l-container l-header__content">
+            <div class="c-logo">
+                <a href="index.html" class="c-logo__link" aria-label="Dev Tools Showcase: Go to Home">
+                    <img 
+                        src="/src/assets/logo.png" 
+                        srcset="/src/assets/logo.png 1x, /src/assets/logo@2x.png 2x" 
+                        class="c-logo__img"
+                        height="40" 
+                        alt="Dev Tools Showcase Logo">
+                </a>
+            </div>
+            
+            <nav class="c-nav" aria-label="Main navigation">
+                <ul class="c-nav__list">
+                    <li class="c-nav__item"><a href="index.html" class="c-nav__link">Home</a></li>
+                    <li class="c-nav__item"><a href="tools.html" class="c-nav__link" aria-current="page">Tools</a></li>
+                    <li class="c-nav__item"><a href="about.html" class="c-nav__link">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="l-main l-container l-tools-layout">
+        
+        <aside class="l-tools-layout__aside c-sidebar" aria-label="Search and Filters">
+            <h3 class="c-sidebar__title">Search and Filters</h3>
+            
+            <form role="search" class="c-search-form">
+                <label for="search-by-name" class="c-search-form__label u-hide-visually">Search by name</label>
+                <div class="c-search-input-group">
+                    <input type="text" id="search-by-name" name="search" placeholder="Search by name" class="c-search-form__input">
+                    <button type="submit" aria-label="Search tool" class="c-search-form__button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+            
+            <nav class="c-category-nav" aria-label="Categories list">
+                <ul class="c-category-nav__list">
+                    <li class="c-category-nav__item"><a href="tool-details.html?id=bubble-sort" class="c-category-nav__link">Tool 1</a></li>
+                    <li class="c-category-nav__item"><a href="tool-details.html?id=quick-sort" class="c-category-nav__link">Tool 2</a></li>
+                    <li class="c-category-nav__item"><a href="tool-details.html?id=foo" class="c-category-nav__link">Tool 3</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="l-tools-layout__content" aria-labelledby="tools-list-heading">
+            <h1 id="tools-list-heading" class="u-hide-visually">Development Tools</h1>
+
+            <aside class="c-stats" role="complementary" aria-label="Popularity statistics">
+                <p>Most popular tool of all time is <b>name</b> with almost 1000000 uses and other statistics like usage statistics and active users statistics</p>
+            </aside>
+            
+            <div class="l-grid l-grid--4-cols u-mb-6">
+                
+                <article class="c-card">
+                    <h3 class="c-card__title">Name</h3>
+                    <div class="c-card__snippet" role="region" aria-label="Tool code fragment">
+                        <pre><code class="c-card__code">Code snippet</code></pre>
+                    </div>
+                    <div class="c-card__tags">
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                    </div>
+                    <a href="tool-details.html?id=tool1" class="c-card__link" aria-label="View Tool1 details"></a>
+                </article>
+                <article class="c-card">
+                    <h3 class="c-card__title">Name</h3>
+                    <div class="c-card__snippet" role="region" aria-label="Tool code fragment">
+                        <pre><code class="c-card__code">Code snippet</code></pre>
+                    </div>
+                    <div class="c-card__tags">
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                    </div>
+                    <a href="tool-details.html?id=tool2" class="c-card__link" aria-label="View Tool2 details"></a>
+                </article>
+                <article class="c-card">
+                    <h3 class="c-card__title">Name</h3>
+                    <div class="c-card__snippet" role="region" aria-label="Tool code fragment">
+                        <pre><code class="c-card__code">Code snippet</code></pre>
+                    </div>
+                    <div class="c-card__tags">
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                    </div>
+                    <a href="tool-details.html?id=tool3" class="c-card__link" aria-label="View Tool3 details"></a>
+                </article>
+                <article class="c-card">
+                    <h3 class="c-card__title">Name</h3>
+                    <div class="c-card__snippet" role="region" aria-label="Tool code fragment">
+                        <pre><code class="c-card__code">Code snippet</code></pre>
+                    </div>
+                    <div class="c-card__tags">
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                    </div>
+                    <a href="tool-details.html?id=tool4" class="c-card__link" aria-label="View Tool4 details"></a>
+                </article>
+                <article class="c-card">
+                    <h3 class="c-card__title">Name</h3>
+                    <div class="c-card__snippet" role="region" aria-label="Tool code fragment">
+                        <pre><code class="c-card__code">Code snippet</code></pre>
+                    </div>
+                    <div class="c-card__tags">
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                    </div>
+                    <a href="tool-details.html?id=tool5" class="c-card__link" aria-label="View Tool5 details"></a>
+                </article>
+                <article class="c-card">
+                    <h3 class="c-card__title">Name</h3>
+                    <div class="c-card__snippet" role="region" aria-label="Tool code fragment">
+                        <pre><code class="c-card__code">Code snippet</code></pre>
+                    </div>
+                    <div class="c-card__tags">
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                    </div>
+                    <a href="tool-details.html?id=tool6" class="c-card__link" aria-label="View Tool6 details"></a>
+                </article>
+                <article class="c-card">
+                    <h3 class="c-card__title">Name</h3>
+                    <div class="c-card__snippet" role="region" aria-label="Tool code fragment">
+                        <pre><code class="c-card__code">Code snippet</code></pre>
+                    </div>
+                    <div class="c-card__tags">
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                    </div>
+                    <a href="tool-details.html?id=tool7" class="c-card__link" aria-label="View Tool7 details"></a>
+                </article>
+                <article class="c-card">
+                    <h3 class="c-card__title">Name</h3>
+                    <div class="c-card__snippet" role="region" aria-label="Tool code fragment">
+                        <pre><code class="c-card__code">Code snippet</code></pre>
+                    </div>
+                    <div class="c-card__tags">
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                        <span class="c-tag">Tag1</span>
+                    </div>
+                    <a href="tool-details.html?id=tool8" class="c-card__link" aria-label="View Tool8 details"></a>
+                </article>
+                
+            </div>
+            
+            <nav class="c-pagination" aria-label="Tools pagination">
+                <ol class="c-pagination__list">
+                    <li class="c-pagination__item"><a href="#" class="c-pagination__link c-pagination__link--icon" aria-label="Previous page" role="button"><i class="fas fa-chevron-left"></i></a></li>
+                    <li class="c-pagination__item"><a href="#" class="c-pagination__link">1</a></li>
+                    <li class="c-pagination__item"><a href="#" class="c-pagination__link c-pagination__link--current" aria-current="page">2</a></li>
+                    <li class="c-pagination__item"><a href="#" class="c-pagination__link">3</a></li>
+                    <li class="c-pagination__item c-pagination__item--spacer">...</li>
+                    <li class="c-pagination__item"><a href="#" class="c-pagination__link">10</a></li>
+                    <li class="c-pagination__item"><a href="#" class="c-pagination__link c-pagination__link--icon" aria-label="Next page" role="button"><i class="fas fa-chevron-right"></i></a></li>
+                </ol>
+            </nav>
+        </section>
+    </main>
+
+    <footer class="l-footer">
+        <div class="l-container">
+            <p>&copy; 2025 Dev Tools Showcase | 
+                <a href="https://github.com/olegbb1502/web-template-2025" aria-label="Go to GitHub repository">
+                    <i class="fab fa-github"></i> @github
+                </a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
